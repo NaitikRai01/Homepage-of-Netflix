@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav img{
+            height: 50px;
+        }
+        header{
+            padding: 1rem 0;
+        }
+        nav{
+            display: flex;
+            justify-content:space-between;
+            text-align: center;
+            padding: 0 10px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+        nav ul li{
+            margin: 10px;
+        }
+        nav ul li a{
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            
+            border: solid rgba(255, 255, 255, 0.438);
+            
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #search{
+            height: 1.5rem;
+            margin-top: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #submit{
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            cursor: pointer;
+            background-color: rgb(168, 164, 164);
+        } 
+        section h2{
+            padding-left: 10px;
+        }
+        .image{
+            padding-left: 10px;
+        }
+        .ready {
+            text-align: center;
+            padding: 100px 0;
+            background-color: black;
+            color: #fff;
+        }
+        
+        .ready1 {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        .butt {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .butt:hover {
+            background-color: #c04d00;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+            <p>
+                <input type="text" placeholder="search....." id="search">
+                <input type="submit" id="submit">
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Trending Now</h2>
+            <div class="image">
+                <a href="google.com" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg" height="300px"></a>
+                <a href="google.com" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNjk4MDdhODctMmFhYi00ZTNhLThlN2UtN2NhZGY0OGFlMWEwXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" height="300px"></a>
+                <a href="google.com" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNWNlYzA2OWUtMWE1Mi00ZjMyLWExY2ItZDVlZmQ0YTMyZmEyXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg" height="300px"></a>
+                <a href="google.com" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" height="300px"></a>
+                <a href="google.com"><img src="https://m.media-amazon.com/images/M/MV5BYmRhZjkyMjEtNjRkMS00MDQ0LTg2NGMtMTQ3ZjE0NjJmMjM2L2ltYWdlXkEyXkFqcGdeQXVyNTY0MTkxMTg@.V1.jpg" height="300px"></a>
+                <a href="google.com"><img src="https://m.media-amazon.com/images/M/MV5BNGZjZDc3NjAtYjI1OC00NWUzLWIxOWItNzUyODc5NDIwMWRjXkEyXkFqcGdeQXVyNTQ4ODA2NzQ@.V1_FMjpg_UX1000.jpg" height="300px" width="200px"></a>
+            </div>
+        </section>
+        <section>
+            <h2>Watch it again</h2>
+            <div class="image">
+            <img src="https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy.V1_FMjpg_UX1000.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjk4MDdhODctMmFhYi00ZTNhLThlN2UtN2NhZGY0OGFlMWEwXkEyXkFqcGdeQXVyODk4OTc3MTY@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWNlYzA2OWUtMWE1Mi00ZjMyLWExY2ItZDVlZmQ0YTMyZmEyXkEyXkFqcGdeQXVyMjYwNDA2MDE@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz.V1_FMjpg_UX1000.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BYmRhZjkyMjEtNjRkMS00MDQ0LTg2NGMtMTQ3ZjE0NjJmMjM2L2ltYWdlXkEyXkFqcGdeQXVyNTY0MTkxMTg@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGZjZDc3NjAtYjI1OC00NWUzLWIxOWItNzUyODc5NDIwMWRjXkEyXkFqcGdeQXVyNTQ4ODA2NzQ@.V1_FMjpg_UX1000.jpg" height="300px" width="200px">
+            </div>
+        </section>
+        <section>
+            <h2>Popular on Netflix</h2>
+            <div class="image">
+                <img src="https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTM0NTUzNDIy.V1_FMjpg_UX1000.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjk4MDdhODctMmFhYi00ZTNhLThlN2UtN2NhZGY0OGFlMWEwXkEyXkFqcGdeQXVyODk4OTc3MTY@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWNlYzA2OWUtMWE1Mi00ZjMyLWExY2ItZDVlZmQ0YTMyZmEyXkEyXkFqcGdeQXVyMjYwNDA2MDE@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz.V1_FMjpg_UX1000.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BYmRhZjkyMjEtNjRkMS00MDQ0LTg2NGMtMTQ3ZjE0NjJmMjM2L2ltYWdlXkEyXkFqcGdeQXVyNTY0MTkxMTg@.V1.jpg" height="300px">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGZjZDc3NjAtYjI1OC00NWUzLWIxOWItNzUyODc5NDIwMWRjXkEyXkFqcGdeQXVyNTQ4ODA2NzQ@.V1_FMjpg_UX1000.jpg" height="300px" width="200px">
+            </div>
+        </section>
+        <hr>
+        <section class="ready">
+            <div class="ready1">
+                <h2>Ready to Get Started?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="butt">Sign Up Now</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>&copy; 2023 Expansive Landing Page. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
